@@ -1,0 +1,145 @@
+/* General Settings */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;700&display=swap");
+
+:root {
+  --bg-color: black;
+  --bg-header: #16161a;
+  --color-btn: #7f5af0;
+  --color-menu: #999;
+  --color-menu2: #fffe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--bg-color);
+  color: var(--color-menu);
+}
+
+li {
+  list-style: none;
+}
+/* NAVIGATION */
+header {
+  height: 15vh;
+  /* background-color: var(--bg-header); */
+  background-color: #000;
+  display: flex;
+}
+.main-nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 180px;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-list2 {
+  display: flex;
+}
+.nav-list2 li a {
+  color: #fffe;
+  padding: 0.4rem;
+}
+.tickets {
+  margin-left: auto;
+}
+
+/* Menu links style and Hover */
+.tickets-btn {
+  margin-left: auto;
+  background-color: var(--color-btn);
+  padding: 1rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+}
+.tickets-btn:hover,
+.tickets-btn:focus {
+  color: var(--color-btn);
+  background-color: black;
+  border: 1px solid #7f5af0;
+}
+
+.nav-list li,
+.nav-list2 li {
+  display: block;
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-menu);
+  transition: all 0.3 ease-in-out;
+}
+/* .nav-list a:hover {
+  color: var(--color-menu2);
+  text-decoration: underline;
+  text-decoration-color: var(--color-btn);
+} */
+.under {
+  position: relative;
+}
+.under:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #7f5af0;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.under:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.nav-list a:hover {
+  color: #fffe;
+}
+
+.fab {
+  font-size: 2rem;
+  padding: 1rem;
+}
+.fab:hover,
+.fab:focus {
+  color: var(--color-menu2);
+}
+.hero {
+  height: 85vh;
+  background-image: url(img/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media only screen and (max-width: 760px) {
+  .nav-list {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .nav-list2 li {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+  }
+}
