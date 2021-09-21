@@ -188,6 +188,7 @@ a {
     width: 100%;
   }
   /* otan patame to burger na emfanizontai ta links */
+
   .nav-list2.show {
     display: flex;
   }
