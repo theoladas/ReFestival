@@ -31,7 +31,6 @@ li {
 /* NAVIGATION */
 header {
   height: 15vh;
-  /* background-color: var(--bg-header); */
   background-color: #000;
   display: flex;
 }
@@ -39,6 +38,8 @@ header {
   width: 90%;
   margin: auto;
   display: flex;
+
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -87,11 +88,7 @@ a {
   color: var(--color-menu);
   transition: all 0.3 ease-in-out;
 }
-/* .nav-list a:hover {
-  color: var(--color-menu2);
-  text-decoration: underline;
-  text-decoration-color: var(--color-btn);
-} */
+
 .under {
   position: relative;
 }
@@ -123,23 +120,89 @@ a {
 .fab:focus {
   color: var(--color-menu2);
 }
-.hero {
+
+.hamburger {
+  display: none;
+  background-color: transparent;
+  border: none;
+  color: var(--color-menu2);
+  font-size: 2.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.hamburger:hover,
+.hamburger:focus {
+  outline: none;
+  color: var(--color-btn);
+}
+/* Slide */
+.glide__slide img {
+  width: 100%;
   height: 85vh;
-  background-image: url(img/1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  object-fit: cover;
+  object-position: center;
+}
+.glide__bullet {
+  width: 15px;
+  height: 15px;
+}
+/* Cards */
+.card_section {
+  margin-top: 5rem;
+  min-height: 100vh;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.card_info {
+  margin: 2rem;
+  transition: all 0.4s ease-in-out;
+}
+.card_text {
+  color: var(--color-menu2);
+  font-weight: 100;
+  width: 100%;
 }
 
-@media only screen and (max-width: 760px) {
+.card_info:hover,
+.card_info.card_text:hover {
+  background: #7f5af0;
+  color: var(--color-menu2);
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 800px) {
   .nav-list {
     display: none;
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 760px) {
+  .nav-list,
+  .nav-list2 {
+    display: none;
+    /* gia na pianoun olo ton xoro ta links  */
+    width: 100%;
+  }
+  /* otan patame to burger na emfanizontai ta links */
+
+  .nav-list2.show {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+    margin-left: auto;
+  }
+
   .nav-list2 li {
     display: flex;
     flex-wrap: wrap;
     font-size: 1.4rem;
+  }
+  .card_info {
+    margin: 1rem 0;
   }
 }
