@@ -149,7 +149,7 @@ a {
 /* Cards */
 .card_section {
   margin-top: 5rem;
-  min-height: 100vh;
+  min-height: 60vh;
 }
 .cards {
   display: flex;
@@ -174,7 +174,29 @@ a {
   color: var(--color-menu2);
   transform: scale(1.1);
 }
+.refestival-info {
+  display: flex;
+  width: 90%;
+}
+.refestival_head {
+  margin-left: 1rem;
+  text-transform: uppercase;
+  color: var(--color-menu2);
+}
+hr {
+  border: 1px solid #7f5af0;
+}
+.refestival-h3 {
+  font-size: 4rem;
+  margin-left: 1rem;
+  letter-spacing: 3px;
+}
 
+.refest_img {
+  width: 50%;
+}
+
+/* MEDIA */
 @media only screen and (max-width: 800px) {
   .nav-list {
     display: none;
