@@ -149,7 +149,7 @@ a {
 /* Cards */
 .card_section {
   margin-top: 5rem;
-  min-height: 100vh;
+  min-height: 40vh;
 }
 .cards {
   display: flex;
@@ -172,9 +172,52 @@ a {
 .card_info.card_text:hover {
   background: #7f5af0;
   color: var(--color-menu2);
-  transform: scale(1.1);
+  transform: scale(1.02);
+}
+.refestival-section {
+  min-height: 60vh;
+  margin-bottom: 5rem;
+}
+.refestival_cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.refestival_head {
+  margin-top: 5rem;
+  text-transform: uppercase;
+  color: var(--color-menu2);
 }
 
+hr {
+  width: 90%;
+  border: 1px solid #7f5af0;
+}
+.refestival-h3 {
+  font-size: 4rem;
+  /* margin-left: 1rem; */
+  letter-spacing: 3px;
+}
+
+.refest_img {
+  width: 500px;
+  height: 400px;
+  width: 90%;
+}
+
+.foot-container {
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.foot-logo {
+  width: 100px;
+  height: 50px;
+}
+
+/* MEDIA */
 @media only screen and (max-width: 800px) {
   .nav-list {
     display: none;
@@ -204,5 +247,8 @@ a {
   }
   .card_info {
     margin: 1rem 0;
+  }
+  .refest-card {
+    margin-left: 5rem;
   }
 }
