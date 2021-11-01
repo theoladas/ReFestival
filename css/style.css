@@ -8,7 +8,9 @@
   --color-menu: #999;
   --color-menu2: #fffe;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 * {
   margin: 0;
   padding: 0;
