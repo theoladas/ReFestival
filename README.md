@@ -25,8 +25,6 @@
 
 ## Overview
 
-Desktop
-
 ![screencapture-theoladas-github-io-ReFestival-2022-06-14-15_05_42](https://user-images.githubusercontent.com/67963370/173600383-7980de7c-0fd8-4d3b-9871-3a13e67f0c15.png)
 
 ### Built With
