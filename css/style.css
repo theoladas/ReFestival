@@ -39,7 +39,6 @@ header {
   width: 90%;
   margin: auto;
   display: flex;
-
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
@@ -228,11 +227,8 @@ hr {
   .nav-list,
   .nav-list2 {
     display: none;
-    /* gia na pianoun olo ton xoro ta links  */
     width: 100%;
   }
-  /* otan patame to burger na emfanizontai ta links */
-
   .nav-list2.show {
     display: flex;
   }
