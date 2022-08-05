@@ -18,7 +18,7 @@
 }
 html {
   font-size: 62.5%;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -26,7 +26,6 @@ body {
   background-color: var(--bg-color);
   color: var(--color-menu);
 }
-
 li {
   list-style: none;
 }
